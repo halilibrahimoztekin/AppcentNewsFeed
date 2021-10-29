@@ -25,6 +25,7 @@
 12.Detay sayfasındayken kullanıcı News Source butonuna tıkladığında urlyi almakta ve webview controller sayfasında görüntülemekte. 
 
 13.Resim linklerini görüntüleyebilmek için açık kaynaklı bir kütüphane olarak SDWebImage kullandım.
+## Pods
 ```
 target 'AppcentNewsFeed' do
   # Comment the next line if you don't want to use dynamic frameworks
