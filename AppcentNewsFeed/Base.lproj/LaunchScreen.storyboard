@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,44 +13,42 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="IOv-IX-kxg">
-                                <rect key="frame" x="97.5" y="429" width="219" height="38"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="IOv-IX-kxg">
+                                <rect key="frame" x="62" y="403" width="290" height="91"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEWS FEED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGd-Ao-hAp">
-                                <rect key="frame" x="66" y="511" width="282" height="39"/>
+                                <rect key="frame" x="0.0" y="484" width="390" height="27.666666666666686"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="qqS-se-kBb">
-                                <rect key="frame" x="152" y="558" width="111" height="95"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="95" id="7Im-Je-BuX"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="550" width="390" height="50"/>
                                 <color key="color" systemColor="systemGrayColor"/>
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qqS-se-kBb" secondAttribute="bottom" constant="209" id="1Se-CS-3Wy"/>
-                            <constraint firstItem="eGd-Ao-hAp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="5Fk-dh-N7a"/>
-                            <constraint firstItem="eGd-Ao-hAp" firstAttribute="centerX" secondItem="IOv-IX-kxg" secondAttribute="centerX" id="FvD-eF-vIF"/>
-                            <constraint firstItem="eGd-Ao-hAp" firstAttribute="centerX" secondItem="qqS-se-kBb" secondAttribute="centerX" id="NdF-QD-F7o"/>
-                            <constraint firstItem="IOv-IX-kxg" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Tcs-hD-cb3"/>
-                            <constraint firstItem="qqS-se-kBb" firstAttribute="top" secondItem="eGd-Ao-hAp" secondAttribute="bottom" constant="8" id="cdc-TR-4V2"/>
-                            <constraint firstItem="IOv-IX-kxg" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="eOf-2e-4cY"/>
-                            <constraint firstItem="qqS-se-kBb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="152" id="f5X-aP-dAD"/>
-                            <constraint firstItem="eGd-Ao-hAp" firstAttribute="top" secondItem="IOv-IX-kxg" secondAttribute="bottom" constant="44" id="kZJ-LE-dzf"/>
+                            <constraint firstItem="qqS-se-kBb" firstAttribute="leading" secondItem="eGd-Ao-hAp" secondAttribute="leading" id="0ev-fA-7wL"/>
+                            <constraint firstItem="qqS-se-kBb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2xr-tf-Y1d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qqS-se-kBb" secondAttribute="trailing" id="KPw-pa-5lF"/>
+                            <constraint firstItem="qqS-se-kBb" firstAttribute="trailing" secondItem="eGd-Ao-hAp" secondAttribute="trailing" id="Qie-oJ-nrB"/>
+                            <constraint firstItem="eGd-Ao-hAp" firstAttribute="centerX" secondItem="IOv-IX-kxg" secondAttribute="centerX" id="Ym8-fy-JFj"/>
+                            <constraint firstItem="eGd-Ao-hAp" firstAttribute="top" secondItem="IOv-IX-kxg" secondAttribute="bottom" constant="38" id="fGA-DB-XE6"/>
+                            <constraint firstItem="qqS-se-kBb" firstAttribute="top" secondItem="eGd-Ao-hAp" secondAttribute="bottom" constant="38.333333333333314" id="iJJ-7x-Bfw"/>
+                            <constraint firstItem="IOv-IX-kxg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="j7V-qm-LgK"/>
+                            <constraint firstItem="IOv-IX-kxg" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="mTq-ss-3zo"/>
+                            <constraint firstItem="eGd-Ao-hAp" firstAttribute="width" secondItem="IOv-IX-kxg" secondAttribute="width" multiplier="0.837931" id="pPP-hN-6ik"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+            <point key="canvasLocation" x="50.769230769230766" y="374.64454976303318"/>
         </scene>
     </scenes>
     <resources>

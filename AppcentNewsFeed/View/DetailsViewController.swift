@@ -55,21 +55,21 @@ class DetailsViewController: UIViewController {
         print(selectedNewsId)
         print(selectedNews)
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-                   let context = appDelegate.persistentContainer.viewContext
-                   
-                   let idString = selectedNewsId?.uuidString
-                   
-                   let fetchReq = NSFetchRequest<NSFetchRequestResult>(entityName: "Posts")
-                   fetchReq.returnsObjectsAsFaults = false
-                   fetchReq.predicate = NSPredicate(format: "postId = %@",  idString!)
-                   do{
-                       let results = try context.fetch(fetchReq)
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let idString = selectedNewsId?.uuidString
+        
+        let fetchReq = NSFetchRequest<NSFetchRequestResult>(entityName: "Posts")
+        fetchReq.returnsObjectsAsFaults = false
+        fetchReq.predicate = NSPredicate(format: "postId = %@",  idString!)
+        do{
+             let results = try context.fetch(fetchReq)
                        if results.count > 0{
                            
                            print(results)
                            for result in results as! [NSManagedObject] {
                                if let title = result.value(forKey: "posttitle") as? String{
-                                   titleLabel.text = title
+                                   titleLabel.text = title 
                                }
                                if let description = result.value(forKey: "postdescription") as? String{
                                    descriptionTitle.text = description
@@ -101,7 +101,7 @@ class DetailsViewController: UIViewController {
     
     func FeedToDeetails(){
         
-        
+        print(selectedNews)
         descriptionTitle.text = choosenFeed.description
         imageView.sd_setImage(with: URL(string: choosenFeed.urlToImage), placeholderImage: UIImage(named: "no_photo.svg"))
         contentLabel.text = choosenFeed.content
