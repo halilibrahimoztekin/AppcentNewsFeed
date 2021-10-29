@@ -24,9 +24,19 @@
 
 12.Detay sayfasındayken kullanıcı News Source butonuna tıkladığında urlyi almakta ve webview controller sayfasında görüntülemekte. 
 
-13.Resim linklerini görüntüleyebilmek için açık kaynaklı bir kütüphane olarak SDWebImage kullandım. 
+13.Resim linklerini görüntüleyebilmek için açık kaynaklı bir kütüphane olarak SDWebImage kullandım.
+## Pods
+```
+target 'AppcentNewsFeed' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
 
-14.Geliştirme aşamasında MVVM design patternine sadık kalmaya çalıştım. 
+pod 'SDWebImage'
+```
+
+
+
+
 
 <img src="https://github.com/halilibrahimoztekin/AppcentNewsFeed/blob/main/ss/ss8.png" alt="drawing" style="width:300px;"/>
 <img src="https://github.com/halilibrahimoztekin/AppcentNewsFeed/blob/main/ss/ss2.png" alt="drawing" style="width:300px;"/>
