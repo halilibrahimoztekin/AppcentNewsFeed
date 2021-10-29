@@ -28,6 +28,14 @@
 
 14.Geliştirme aşamasında MVVM design patternine sadık kalmaya çalıştım. 
 
+```
+target 'AppcentNewsFeed' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+pod 'SDWebImage'
+```
+
 <img src="https://github.com/halilibrahimoztekin/AppcentNewsFeed/blob/main/ss/ss8.png" alt="drawing" style="width:300px;"/>
 <img src="https://github.com/halilibrahimoztekin/AppcentNewsFeed/blob/main/ss/ss2.png" alt="drawing" style="width:300px;"/>
 <img src="https://github.com/halilibrahimoztekin/AppcentNewsFeed/blob/main/ss/ss3.png" alt="drawing" style="width:300px;"/>
