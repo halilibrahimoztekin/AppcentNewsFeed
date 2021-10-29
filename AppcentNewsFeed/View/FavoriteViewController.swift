@@ -20,6 +20,7 @@ class FavoriteViewController: UIViewController, UITableViewDelegate, UITableView
     var selectedFeed : ArticleViewModel!
     private var feeds : ArticleListViewModel!
     override func viewDidLoad() {
+        selectedNews = ""
         super.viewDidLoad()
         // Core Data ile favori verilerin çekilmesi
         getCoreData()

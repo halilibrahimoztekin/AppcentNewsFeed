@@ -69,7 +69,7 @@ class DetailsViewController: UIViewController {
                            print(results)
                            for result in results as! [NSManagedObject] {
                                if let title = result.value(forKey: "posttitle") as? String{
-                                   titleLabel.text = title 
+                                   titleLabel.text = title
                                }
                                if let description = result.value(forKey: "postdescription") as? String{
                                    descriptionTitle.text = description
@@ -147,7 +147,13 @@ class DetailsViewController: UIViewController {
         newPost.setValue(choosenFeed.title, forKey: "posttitle")
         newPost.setValue(choosenFeed.url, forKey: "posturl")
         newPost.setValue(choosenFeed.urlToImage, forKey: "posturlToImage")
-        
+        do {
+                   try context.save()
+                   print("success")
+               }
+                   catch{
+                       print("error")
+                   }
         NotificationCenter.default.post(name: NSNotification.Name("New Data"), object: nil)
         
     }
