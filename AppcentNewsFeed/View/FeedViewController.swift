@@ -13,7 +13,7 @@ import Alamofire
 class FeedViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource {
   
     let urlString = "https://newsapi.org/v2/top-headlines?country=tr&category=business&apiKey="
-    let apiKey  = "b57b01beb1d44a06b624e41de98b20e4"
+    let apiKey  = "fdbfc969563f49e4935633696d3d2bb1"
     var keyword = "turkey"
     var pagination : Int = 2
     var up = true

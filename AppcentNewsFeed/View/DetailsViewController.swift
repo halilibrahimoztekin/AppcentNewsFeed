@@ -52,7 +52,8 @@ class DetailsViewController: UIViewController {
     
     
     func favToDetails(){
-        
+        print(selectedNewsId)
+        print(selectedNews)
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
                    let context = appDelegate.persistentContainer.viewContext
                    
@@ -65,7 +66,7 @@ class DetailsViewController: UIViewController {
                        let results = try context.fetch(fetchReq)
                        if results.count > 0{
                            
-                           
+                           print(results)
                            for result in results as! [NSManagedObject] {
                                if let title = result.value(forKey: "posttitle") as? String{
                                    titleLabel.text = title
@@ -99,6 +100,7 @@ class DetailsViewController: UIViewController {
     }
     
     func FeedToDeetails(){
+        
         
         descriptionTitle.text = choosenFeed.description
         imageView.sd_setImage(with: URL(string: choosenFeed.urlToImage), placeholderImage: UIImage(named: "no_photo.svg"))
@@ -164,12 +166,7 @@ class DetailsViewController: UIViewController {
                 }
     }
    
-    
-    @objc func sharePost(){
-        
-      
-        
-    }
+ 
     
   
     
