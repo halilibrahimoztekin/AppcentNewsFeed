@@ -38,10 +38,7 @@ class DetailsViewController: UIViewController {
         }
        
         
-        let add = UIBarButtonItem(barButtonSystemItem: .bookmarks, target: self, action: #selector(favoriteAddPost))
-        let share = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(share(sender:)))
-        
-        navigationItem.rightBarButtonItems = [add, share]
+       
 
         
         
@@ -54,6 +51,10 @@ class DetailsViewController: UIViewController {
     func favToDetails(){
         print(selectedNewsId)
         print(selectedNews)
+       
+        let share = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(share(sender:)))
+        
+        navigationItem.rightBarButtonItems = [ share]
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         
@@ -100,7 +101,10 @@ class DetailsViewController: UIViewController {
     }
     
     func FeedToDeetails(){
+        let add = UIBarButtonItem(barButtonSystemItem: .bookmarks, target: self, action: #selector(favoriteAddPost))
+        let share = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(share(sender:)))
         
+        navigationItem.rightBarButtonItems = [add, share]
         print(selectedNews)
         descriptionTitle.text = choosenFeed.description
         imageView.sd_setImage(with: URL(string: choosenFeed.urlToImage), placeholderImage: UIImage(named: "no_photo.svg"))
