@@ -26,7 +26,9 @@
 
 13.Resim linklerini görüntüleyebilmek için açık kaynaklı bir kütüphane olarak SDWebImage kullandım. 
 
-<img src="https://github.com/halilibrahimoztekin/AppcentNewsFeed/blob/main/ss/ss1.png" alt="drawing" style="width:300px;"/>
+14.Geliştirme aşamasında MVVM design patternine sadık kalmaya çalıştım. 
+
+<img src="https://github.com/halilibrahimoztekin/AppcentNewsFeed/blob/main/ss/ss8.png" alt="drawing" style="width:300px;"/>
 <img src="https://github.com/halilibrahimoztekin/AppcentNewsFeed/blob/main/ss/ss2.png" alt="drawing" style="width:300px;"/>
 <img src="https://github.com/halilibrahimoztekin/AppcentNewsFeed/blob/main/ss/ss3.png" alt="drawing" style="width:300px;"/>
 <img src="https://github.com/halilibrahimoztekin/AppcentNewsFeed/blob/main/ss/ss4.png" alt="drawing" style="width:300px;"/>
